@@ -1,0 +1,82 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>survey form</title>
+<link rel="stylesheet" href="styles.css">
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This survey form is to collect the details</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">enter your name</label>
+      <input id="name" type="text" placeholder="enter your name" required/><br>
+      <label for="email" id="email-label" >enter your email</label>
+      <input id="email" type="email" required placeholder="enter the email"/>
+      <label for="number" id="number-label">enter your number</label>
+      <input id="number" type="number"required min="10" max="12" placeholder="enter your number"/>
+      <labek for="dropdown">select your age</label>
+      <select id="dropdown">
+        <option value="18+">18+</option>
+        <option value="below18">below 18</option>
+      <label>what is your age?</label>
+      <label for="under18">
+      <input id="under18" type="radio" name="age" value="under18">under18</label>
+      <label for="over18">
+      <input id="over18" type="radio" name="age" value="over18">over 18</label>
+      <label>what are your hobbies</label>
+      <label for="hobby1">
+        <input id="hobby1" type="checkbox" name="hobbies" value="reading">
+        <label for="hobby2">
+        <input id="hobby2" type="checkbox" name="hobbies" value="writing">
+        <label for="hobby3">
+        <input id="hobby3" type="checkbox" name="hobbies" value="playing">
+        <label for="comments">additional comments</label>
+        <textarea id="comments" name="comments" rows="5" cols="20"></textarea>
+        <button id="submit" type="submit">submit</button>
+    </form>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+  font-family:"arial";
+}
+
+#survey-form{
+  max-width:500px;
+  margin:20px auto;
+  padding:20px;
+  background-color:yellow;
+  border:1px solid black;
+}
+
+label{
+  display:block;
+}
+
+input,select,textarea{
+  width:100%;
+  height:30px;
+margin-bottom:20px;
+padding:1px;
+}
+
+button{
+  width:100%;
+  height:40px;
+  margin:auto;
+  border:2px solid black;
+}
+
+button:hover{
+  background-color:red;
+}
+
+** end of styles.css **
+
